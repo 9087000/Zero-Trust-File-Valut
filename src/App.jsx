@@ -3,15 +3,16 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import SessionExpiryModal from './components/SessionExpiryModal'
-import Home from './pages/Home'
-import About from './pages/About'
-import Privacy from './pages/Privacy'
-import Terms from './pages/Terms'
-import Contact from './pages/Contact'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
-import Dashboard from './pages/Dashboard'
-import Share from './pages/Share'
+// src/App.jsx (top of file)
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Privacy from './pages/Privacy.jsx';
+import Terms from './pages/Terms.jsx';
+import Contact from './pages/Contact.jsx';   // <— make sure this path exists
+import Login from './pages/Login.JSX';
+import Signup from './pages/Signup.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import Share from './pages/Share.jsx';
 import api, { setOn401Handler } from './api/client'
 export default function App(){
 const [expired, setExpired] = useState(false)
